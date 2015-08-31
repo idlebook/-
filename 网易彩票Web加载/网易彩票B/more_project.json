@@ -1,0 +1,83 @@
+[
+ {
+ "title": "网易电影",
+ "stitle":"共享美好时刻",
+ "id": "com.lede.movie",
+ "url": "https://itunes.apple.com/cn/app/id628309462?ls=1&mt=8",
+ "icon": "movie@2x.png",
+ "customUrl": "movieTicket163"
+ },
+ 
+ {
+ "title": "网易新闻",
+ "stitle":"有态度的新闻客户端",
+ "id": "com.netease.news",
+ "url": "http://itunes.apple.com/app/id425349261?mt=8",
+ "icon": "newsapp@2x.png",
+ "customUrl": "newsapp"
+ },
+ 
+ 
+ {
+ "title": "网易云阅读",
+ "stitle":"100000+好书杂志免费读",
+ "id": "com.netease.iphonereader",
+ "url": "http://itunes.apple.com/app/id462186890?mt=8",
+ "icon": "reader@2x.png",
+ "customUrl": "neteasereaderuri"
+ },
+ 
+ {
+ "title": "有道词典",
+ "stitle":"最好用的免费全能翻译软件",
+ "id": "youdaoPro",
+ "url": "http://itunes.apple.com/app/id353115739?mt=8",
+ "icon": "youdao@2x.png",
+ "customUrl": "yddictProapp"
+ },
+ 
+ {
+ "title": "恵恵",
+ "stitle":"一站购物，多站比价",
+ "id": "cn.huihui.Guide",
+ "url": "https://itunes.apple.com/cn/app/hui-hui-gou-wu-zhu-shou-wang/id698013642?mt=8",
+ "icon": "huihui@2x.png",
+ "customUrl": "huihuideal"
+ },
+ 
+ {
+ "title": "网易公开课",
+ "stitle":"随时随地上名校公开课",
+ "id": "com.netease.videoHD",
+ "url": "http://itunes.apple.com/app/id415424368?mt=8",
+ "icon": "open@2x.png",
+ "customUrl": "ntesopen"
+ },
+ 
+ {
+ "title": "网易云相册",
+ "stitle":"手机拍照必备工具",
+ "id": "com.netease.cloudphotos",
+ "url": "http://itunes.apple.com/app/id451931841?mt=8",
+ "icon": "cloudphotos@2x.png",
+ "customUrl": ""
+ },
+ 
+ {
+ "title": "网易电视指南",
+ "stitle":"手机也能看电视",
+ "id": "com.netease.tvguide",
+ "url": "http://itunes.apple.com/app/id480095986",
+ "icon": "tvguide@2x.png",
+ "customUrl": "tvguide"
+ },
+ 
+ {
+ "title": "网易微博",
+ "stitle":"有态度的微博",
+ "id": "com.netease.microblogging",
+ "url": "http://itunes.apple.com/app/id383629309?mt=8",
+ "icon": "newb@2x.png",
+ "customUrl": "microblogging"
+ },
+ ]
