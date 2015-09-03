@@ -11,6 +11,7 @@
 		842C48DD1B980D1700B7F033 /* WTSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C48DC1B980D1700B7F033 /* WTSFriendTrendsViewController.m */; };
 		842C48E01B980D2500B7F033 /* WTSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C48DF1B980D2500B7F033 /* WTSNewViewController.m */; };
 		842C48E31B980D6800B7F033 /* WTSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C48E21B980D6800B7F033 /* WTSEssenceViewController.m */; };
+		842C48E91B981C2C00B7F033 /* WTSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C48E81B981C2C00B7F033 /* WTSTabBar.m */; };
 		84325E011B98078C002FCB68 /* WTSMySwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 84325E001B98078C002FCB68 /* WTSMySwich.m */; };
 		8447B95C1B97DFCB00B3F4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447B95B1B97DFCB00B3F4AC /* main.m */; };
 		8447B95F1B97DFCB00B3F4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447B95E1B97DFCB00B3F4AC /* AppDelegate.m */; };
@@ -40,6 +41,8 @@
 		842C48DF1B980D2500B7F033 /* WTSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSNewViewController.m; sourceTree = "<group>"; };
 		842C48E11B980D6800B7F033 /* WTSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSEssenceViewController.h; sourceTree = "<group>"; };
 		842C48E21B980D6800B7F033 /* WTSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSEssenceViewController.m; sourceTree = "<group>"; };
+		842C48E71B981C2C00B7F033 /* WTSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTSTabBar.h; path = ../WTSTabBar.h; sourceTree = "<group>"; };
+		842C48E81B981C2C00B7F033 /* WTSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTSTabBar.m; path = ../WTSTabBar.m; sourceTree = "<group>"; };
 		84325DFF1B98078C002FCB68 /* WTSMySwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSMySwich.h; sourceTree = "<group>"; };
 		84325E001B98078C002FCB68 /* WTSMySwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSMySwich.m; sourceTree = "<group>"; };
 		8447B9561B97DFCB00B3F4AC /* 百思不得其姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得其姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,8 @@
 				842C48DF1B980D2500B7F033 /* WTSNewViewController.m */,
 				842C48E11B980D6800B7F033 /* WTSEssenceViewController.h */,
 				842C48E21B980D6800B7F033 /* WTSEssenceViewController.m */,
+				842C48E71B981C2C00B7F033 /* WTSTabBar.h */,
+				842C48E81B981C2C00B7F033 /* WTSTabBar.m */,
 				8447B9591B97DFCB00B3F4AC /* Supporting Files */,
 			);
 			path = "百思不得其姐";
@@ -246,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842C48E91B981C2C00B7F033 /* WTSTabBar.m in Sources */,
 				842C48E31B980D6800B7F033 /* WTSEssenceViewController.m in Sources */,
 				842C48E01B980D2500B7F033 /* WTSNewViewController.m in Sources */,
 				84325E011B98078C002FCB68 /* WTSMySwich.m in Sources */,

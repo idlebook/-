@@ -1,5 +1,5 @@
 //
-//  WTSFriendTrendsViewController.h
+//  WTSTabBar.h
 //  百思不得其姐
 //
 //  Created by admin on 15/9/2.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WTSFriendTrendsViewController : UIViewController
-
+@interface WTSTabBar : UITabBar
 
 @end

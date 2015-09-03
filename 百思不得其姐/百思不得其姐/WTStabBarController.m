@@ -12,6 +12,7 @@
 #import "WTSFriendTrendsViewController.h"
 #import "WTSMeViewController.h"
 #import "WTSNewViewController.h"
+#import "WTSTabBar.h"
 @interface WTStabBarController ()
 
 
@@ -25,9 +26,17 @@
     [self setupChildVCs];
     // 设置item
     [self setupItem];
+    // 处理tabBar
+    [self setuptabBar];
     
 
     
+}
+
+- (void)setuptabBar
+{
+    // 利用KVC替换系统的Tabbar
+    [self setValue:[[WTSTabBar alloc] init] forKey:@"TabBar"];
 }
 
 /**
@@ -36,9 +45,9 @@
 - (void)setupChildVCs
 {
      [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon" title:@"精华"];
-     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon" title:@"新帖"];
-     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon" title:@"关注"];
-     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon" title:@"我"];
+     [self setupVC:[[WTSNewViewController alloc] init] normalImage:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon" title:@"新帖"];
+     [self setupVC:[[WTSFriendTrendsViewController alloc] init] normalImage:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon" title:@"关注"];
+     [self setupVC:[[WTSMeViewController alloc] init] normalImage:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon" title:@"我"];
     
    
 }
