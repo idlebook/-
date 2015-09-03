@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WTStabBarController.h"
+#import "WTStestViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 创建窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    // 创建根控制器
+    WTStabBarController *vc = [[WTStabBarController alloc] init];
+   // WTStestViewController *vc = [[WTStestViewController alloc] init];
+   // vc.view.backgroundColor = [UIColor grayColor];
+    
+    self.window.rootViewController = vc;
+        // 显示窗口
+    [self.window makeKeyAndVisible];
+    /*
+    UISwitch *s  = [UISwitch appearance];
+    s.onTintColor = [UIColor redColor];
+#warning 这样会报错,因为s并不是真正的实例对象.
+//    [s.window addSubview:s];
+
+    
+    UISwitch *s1 = [[UISwitch alloc] init];
+    s1.center = CGPointMake(20, 40);
+    [self.window addSubview:s1];
+    
+    UISwitch *s2 = [[UISwitch alloc] init];
+    s1.center = CGPointMake(50 , 50);
+    [self.window addSubview:s2];
+     */
+    
+    
+
+    
+    
     return YES;
 }
 
