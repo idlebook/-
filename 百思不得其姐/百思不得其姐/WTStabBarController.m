@@ -21,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 设置子控制器
     [self setupChildVCs];
+    // 设置item
     [self setupItem];
     
 
@@ -33,50 +35,14 @@
  */
 - (void)setupChildVCs
 {
-        // 设置文字不要渲染
-    // 正常状态下的文字效果
-    NSMutableDictionary *normalArrs = [NSMutableDictionary dictionary];
-    normalArrs[NSForegroundColorAttributeName] = [UIColor blackColor];
-    normalArrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-    // 选中状态下的文字效果
-    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    normalArrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-    [vc1.tabBarItem setTitleTextAttributes:normalArrs forState:UIControlStateNormal];
-    [vc1.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    [self addChildViewController:vc1];
+     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon" title:@"精华"];
+     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon" title:@"新帖"];
+     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon" title:@"关注"];
+     [self setupVC:[[WTSEssenceViewController alloc] init] normalImage:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon" title:@"我"];
     
-    WTSNewViewController *vc2 = [[WTSNewViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor redColor];
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-    vc2.tabBarItem.title = @"新帖";
-    [vc2.tabBarItem setTitleTextAttributes:normalArrs forState:UIControlStateNormal];
-    [vc2.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
-    [self addChildViewController:vc2];
-    
-    WTSFriendTrendsViewController *vc3 = [[WTSFriendTrendsViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor blueColor];
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-    vc3.tabBarItem.title = @"关注";
-    [vc3.tabBarItem setTitleTextAttributes:normalArrs forState:UIControlStateNormal];
-    [vc3.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
-    [self addChildViewController:vc3];
-    
-    WTSMeViewController *vc4 = [[WTSMeViewController alloc] init];
-    vc4.view.backgroundColor = [UIColor yellowColor];
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    vc4.tabBarItem.title = @"我";
-    [vc4.tabBarItem setTitleTextAttributes:normalArrs forState:UIControlStateNormal];
-    [vc4.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
-    [self addChildViewController:vc4];
-
-    
+   
 }
+
 /**
  *  设置子控制器的具体方法
  *
@@ -86,11 +52,12 @@
 - (void)setupVC:(UIViewController *)VC normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage title:(NSString *)title
 {
     // 包装一个导航控制器
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:VC];
-    vc.view.backgroundColor = [UIColor greenColor];
-    vc.tabBarItem.image = [UIImage imageNamed:normalImage];
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    vc.tabBarItem.title = title;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:VC];
+    nav.view.backgroundColor = [UIColor greenColor];
+    nav.tabBarItem.image = [UIImage imageNamed:normalImage];
+    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    nav.tabBarItem.title = title;
+    [self addChildViewController:nav];
 
 }
 
@@ -99,7 +66,19 @@
  */
 - (void)setupItem
 {
+    // 设置文字不要渲染
+    // 正常状态下的文字效果
+    NSMutableDictionary *normalArrs = [NSMutableDictionary dictionary];
+    normalArrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    normalArrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    // 选中状态下的文字效果
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    normalArrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
+    // 获取整个tabarItem
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:normalArrs forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
 
 
