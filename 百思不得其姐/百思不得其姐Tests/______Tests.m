@@ -1,6 +1,6 @@
 //
-//  _____Tests.m
-//  百思不得姐Tests
+//  ______Tests.m
+//  百思不得其姐Tests
 //
 //  Created by admin on 15/9/2.
 //  Copyright (c) 2015年 admin. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface _____Tests : XCTestCase
+@interface ______Tests : XCTestCase
 
 @end
 
-@implementation _____Tests
+@implementation ______Tests
 
 - (void)setUp {
     [super setUp];
