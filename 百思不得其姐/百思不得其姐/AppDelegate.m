@@ -30,6 +30,10 @@
     self.window.rootViewController = vc;
         // 显示窗口
     [self.window makeKeyAndVisible];
+    WTSLogFunc;
+   // NSLog(@"%zd", __LINE__);
+    
+
     /*
     UISwitch *s  = [UISwitch appearance];
     s.onTintColor = [UIColor redColor];

@@ -20,6 +20,8 @@
 - (nonnull instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        // 设置tabBar的背景图片
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
         // 创建一个button
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         // 设置正常时状态下的图片
