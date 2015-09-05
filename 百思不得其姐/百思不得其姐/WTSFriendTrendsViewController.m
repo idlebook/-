@@ -19,16 +19,9 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"我的关注";
     
-    // 左边导航栏的item
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
-    // 选中可以常态，高亮状态在Down才有效，up时候状态无效
-    [btn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
-    // 自动适应大小
-    [btn sizeToFit];
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+       UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:nil action:@selector(btnClick)];
+    self.navigationItem.leftBarButtonItem = btn;
+
 
 }
 

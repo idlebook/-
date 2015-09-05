@@ -7,6 +7,7 @@
 //
 
 #import "WTSEssenceViewController.h"
+#import "UIBarButtonItem+WTSExtension.h"
 
 @interface WTSEssenceViewController ()
 
@@ -19,6 +20,7 @@
     // Do any additional setup after loading the view.
 //    self.navigationItem.titleView = [UIImage imageNamed:@"MainTitle"];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    /*
     // 左边导航栏的item
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
@@ -29,6 +31,11 @@
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+     */
+    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:nil action:@selector(btnClick)];
+    self.navigationItem.leftBarButtonItem = btn;
+    
+    
 }
 #warning 没有成为导航控制器的根控制器
 - (void)btnClick
