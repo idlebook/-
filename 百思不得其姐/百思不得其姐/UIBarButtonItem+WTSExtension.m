@@ -18,7 +18,7 @@
     [btn setBackgroundImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
     // 自动适应大小
     [btn sizeToFit];
-    [btn addTarget:tatget action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:tatget action:action forControlEvents:UIControlEventTouchUpInside];
     return [[self alloc] initWithCustomView:btn];
     
 }

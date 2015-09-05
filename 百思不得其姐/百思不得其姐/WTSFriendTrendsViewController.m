@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"我的关注";
     
-       UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:nil action:@selector(btnClick)];
+       UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = btn;
 
 

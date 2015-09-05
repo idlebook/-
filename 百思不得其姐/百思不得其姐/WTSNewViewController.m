@@ -28,7 +28,7 @@
 //    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
 //    
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:nil action:@selector(btnClick)];
+    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = btn;
 
 }

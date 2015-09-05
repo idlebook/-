@@ -21,8 +21,8 @@
     
     
     
-    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:nil action:@selector(btnClick)];
-    UIBarButtonItem *btn2 = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:nil action:@selector(btnClick)];
+    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(btnClick)];
+    UIBarButtonItem *btn2 = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(btnClick)];
     self.navigationItem.rightBarButtonItems = @[btn, btn2];
 
    
