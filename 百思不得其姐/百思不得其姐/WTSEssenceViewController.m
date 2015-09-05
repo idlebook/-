@@ -42,7 +42,7 @@
 - (void)tagClick
 {
     WTSTagViewController *tagVc = [[WTSTagViewController alloc] init];
-    tagVc.hidesBottomBarWhenPushed = YES;
+   // tagVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:tagVc animated:YES];
 }
    

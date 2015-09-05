@@ -20,6 +20,7 @@
 		848B91D91B9AB1D600FB850E /* UIBarButtonItem+WTSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B91D81B9AB1D600FB850E /* UIBarButtonItem+WTSExtension.m */; };
 		848B91DC1B9ABEFB00FB850E /* WTSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B91DB1B9ABEFB00FB850E /* WTSSettingViewController.m */; };
 		848B91DF1B9ABF1700FB850E /* WTSTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B91DE1B9ABF1700FB850E /* WTSTagViewController.m */; };
+		8499D5D11B9B80DE00BA0ED8 /* WTSNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8499D5D01B9B80DE00BA0ED8 /* WTSNavViewController.m */; };
 		84B7B4ED1B97EB7000925056 /* WTStabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7B4EC1B97EB7000925056 /* WTStabBarController.m */; };
 		84B7B4F41B97F12D00925056 /* WTStestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7B4F21B97F12D00925056 /* WTStestViewController.m */; };
 		84B7B4F51B97F12D00925056 /* WTStestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B7B4F31B97F12D00925056 /* WTStestViewController.xib */; };
@@ -64,6 +65,8 @@
 		848B91DB1B9ABEFB00FB850E /* WTSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSSettingViewController.m; sourceTree = "<group>"; };
 		848B91DD1B9ABF1700FB850E /* WTSTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSTagViewController.h; sourceTree = "<group>"; };
 		848B91DE1B9ABF1700FB850E /* WTSTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSTagViewController.m; sourceTree = "<group>"; };
+		8499D5CF1B9B80DE00BA0ED8 /* WTSNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSNavViewController.h; sourceTree = "<group>"; };
+		8499D5D01B9B80DE00BA0ED8 /* WTSNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSNavViewController.m; sourceTree = "<group>"; };
 		84B7B4EB1B97EB7000925056 /* WTStabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStabBarController.h; sourceTree = "<group>"; };
 		84B7B4EC1B97EB7000925056 /* WTStabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStabBarController.m; sourceTree = "<group>"; };
 		84B7B4F11B97F12D00925056 /* WTStestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTStestViewController.h; path = ../WTStestViewController.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				848B91DB1B9ABEFB00FB850E /* WTSSettingViewController.m */,
 				848B91DD1B9ABF1700FB850E /* WTSTagViewController.h */,
 				848B91DE1B9ABF1700FB850E /* WTSTagViewController.m */,
+				8499D5CF1B9B80DE00BA0ED8 /* WTSNavViewController.h */,
+				8499D5D01B9B80DE00BA0ED8 /* WTSNavViewController.m */,
 				8447B9591B97DFCB00B3F4AC /* Supporting Files */,
 			);
 			path = "百思不得其姐";
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848B91DC1B9ABEFB00FB850E /* WTSSettingViewController.m in Sources */,
+				8499D5D11B9B80DE00BA0ED8 /* WTSNavViewController.m in Sources */,
 				842C48E91B981C2C00B7F033 /* WTSTabBar.m in Sources */,
 				842C48E31B980D6800B7F033 /* WTSEssenceViewController.m in Sources */,
 				842C48E01B980D2500B7F033 /* WTSNewViewController.m in Sources */,

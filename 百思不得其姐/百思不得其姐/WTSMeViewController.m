@@ -38,7 +38,7 @@
     // 这个是push到导航控制器的时候隐藏tabar
     //settingVc.navigationController.hidesBottomBarWhenPushed = YES;
     // 隐藏tabBar
-    settingVc.hidesBottomBarWhenPushed = YES;
+    //settingVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:settingVc animated:YES];
 }
 

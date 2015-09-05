@@ -13,6 +13,7 @@
 #import "WTSMeViewController.h"
 #import "WTSNewViewController.h"
 #import "WTSTabBar.h"
+#import "WTSNavViewController.h"
 @interface WTStabBarController ()
 
 
@@ -61,7 +62,7 @@
 - (void)setupVC:(UIViewController *)VC normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage title:(NSString *)title
 {
     // 包装一个导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:VC];
+    WTSNavViewController *nav = [[WTSNavViewController alloc] initWithRootViewController:VC];
     nav.view.backgroundColor = [UIColor greenColor];
     nav.tabBarItem.image = [UIImage imageNamed:normalImage];
     nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
