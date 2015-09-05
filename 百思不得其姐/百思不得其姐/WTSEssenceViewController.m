@@ -8,6 +8,7 @@
 
 #import "WTSEssenceViewController.h"
 #import "UIBarButtonItem+WTSExtension.h"
+#import "WTSTagViewController.h"
 
 @interface WTSEssenceViewController ()
 
@@ -32,15 +33,17 @@
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
      */
-    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(btnClick)];
+    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
     self.navigationItem.leftBarButtonItem = btn;
     
     
 }
 #warning 没有成为导航控制器的根控制器
-- (void)btnClick
+- (void)tagClick
 {
-    WTSLogFunc;
+    WTSTagViewController *tagVc = [[WTSTagViewController alloc] init];
+    tagVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:tagVc animated:YES];
 }
    
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "WTSMeViewController.h"
+#import "WTSSettingViewController.h"
 
 @interface WTSMeViewController ()
 
@@ -20,19 +21,28 @@
     self.navigationItem.title = @"我的";
     
     
-    
-    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(btnClick)];
-    UIBarButtonItem *btn2 = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(btnClick)];
-    self.navigationItem.rightBarButtonItems = @[btn, btn2];
-
-   
+    // 设置右边的按钮
+    UIBarButtonItem *btn = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    UIBarButtonItem *btn2 = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    self.navigationItem.rightBarButtonItems = @[btn2, btn];
 
   }
-
-- (void)btnClick
+- (void)moonClick
 {
-    WTSLogFunc;
+    
 }
+
+- (void)settingClick
+{
+    WTSSettingViewController *settingVc = [[WTSSettingViewController alloc] init];
+    // 这个是push到导航控制器的时候隐藏tabar
+    //settingVc.navigationController.hidesBottomBarWhenPushed = YES;
+    // 隐藏tabBar
+    settingVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:settingVc animated:YES];
+}
+
+
 
 
 @end
