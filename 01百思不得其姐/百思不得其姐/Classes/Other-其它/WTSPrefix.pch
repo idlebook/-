@@ -1,0 +1,35 @@
+//
+//  WTSPrefix.pch
+//  百思不得其姐
+//
+//  Created by admin on 15/9/4.
+//  Copyright © 2015年 admin. All rights reserved.
+//
+#import "UIBarButtonItem+WTSExtension.h"
+#import "UIView+WTSExtention.h"
+
+#ifndef WTSPrefix_pch
+#define WTSPrefix_pch
+// 日志输出
+#ifdef DEBUG
+// __VA_ARGS__ 很多参数的意思
+#define WTSLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布阶段,什么都不要
+#define WTSLog(...)
+#endif
+// 方法输出
+#define WTSLogFunc WTSLog(@"%zd,%s",  __LINE__,__func__)
+// 颜色
+#define WTSARGBColor(a,r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define WTSColor(r,g,b) WTSARGBColor(255,r,g,b)
+// 灰色
+#define WTSGrayColor(v) WTSColor(v,v,v)
+// 全局背景颜色
+#define WTSCommondColor WTSGrayColor(215)
+
+
+
+
+
+#endif /* WTSPrefix_pch */

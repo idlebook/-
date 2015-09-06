@@ -29,6 +29,7 @@
     //  1.1 获取文件名的路径
     NSURL *urlFielePath = [[NSBundle mainBundle] URLForResource:self.helpl.html withExtension:nil];
     //  1.2 包装成请求
+    // 包装成功new
     NSURLRequest *request = [NSURLRequest requestWithURL:urlFielePath];
     //  1.3 让UIWebView执行请求
     [webView loadRequest:request];
